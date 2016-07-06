@@ -6,9 +6,8 @@
 //Course: CS 176 - Windows Desktop Development
 
 using System;
-using static System.Console;
-using System.Data;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +21,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Assignment_09
+namespace Lab_04
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -40,7 +39,7 @@ namespace Assignment_09
             DataSet dataSet;
 
             //Pass the name of the table, if desired
-            DataTable dataTable = new DataTable("Table Name"); 
+            DataTable dataTable = new DataTable("Table Name");
 
             //Tell the table how many columns it has
             DataColumn column;
@@ -66,12 +65,12 @@ namespace Assignment_09
                 row["ParentItem"] = "ParentItem " + i;
                 dataTable.Rows.Add(row);
             }
-            
+
             DataGrid dataGrid1 = new DataGrid();
 
             //Instruct the DataGrid to bind to the DataSet
             //dataGrid1.SetDataBinding(dataSet);
-            
+
         }
 
         private void btn_CalcFinalGPA_Click(object sender, RoutedEventArgs e)
