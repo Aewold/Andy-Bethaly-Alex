@@ -7,12 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="600">
     <Grid>
-        <Button x:Name="btnLoadData" Content="Load Data" HorizontalAlignment="Left" Margin="456,90,0,0" VerticalAlignment="Top" Width="125" Click="btnLoadData_Click"/>
-        <Label x:Name="lblTitle" Content="Assignment 9&#xD;&#xA;CS 176" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Button x:Name="btn_CalcFinalGPA" Content="Calculate Final GPA" HorizontalAlignment="Left" Margin="456,130,0,0" VerticalAlignment="Top" Width="125" Click="btn_CalcFinalGPA_Click"/>
-        <Button x:Name="btnCalcClassAve" Content="Calculate Class Average" HorizontalAlignment="Left" Margin="456,160,0,0" VerticalAlignment="Top" Width="125" Click="btnCalcClassAve_Click"/>
-        <Button x:Name="btnAddStudent" Content="Add Student" HorizontalAlignment="Left" Margin="456,200,0,0" VerticalAlignment="Top" Width="125" Click="btnAddStudent_Click"/>
-        <Button x:Name="btnDeleteStudent" Content="Delete Student" HorizontalAlignment="Left" Margin="456,230,0,0" VerticalAlignment="Top" Width="125" Click="btnDeleteStudent_Click"/>
-        <Label x:Name="lblDate" Content="(Date)" HorizontalAlignment="Left" Margin="479,27,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnLoadData" Content="Load Data" HorizontalAlignment="Left" Margin="441,90,0,0" VerticalAlignment="Top" Width="125" Click="btnLoadData_Click" Height="18"/>
+        <Label x:Name="lblTitle" Content="Assignment 9&#xD;&#xA;CS 176" HorizontalAlignment="Left" Margin="27.4,10,0,0" VerticalAlignment="Top" FontSize="18" Height="58" Width="118" Grid.Column="1"/>
+        <Button x:Name="btn_CalcFinalGPA" Content="Calculate Final GPA" HorizontalAlignment="Left" Margin="441,130,0,0" VerticalAlignment="Top" Width="125" Click="btn_CalcFinalGPA_Click" Height="19"/>
+        <Button x:Name="btnCalcClassAve" Content="Calculate Class Average" HorizontalAlignment="Left" Margin="441,160,0,0" VerticalAlignment="Top" Width="125" Click="btnCalcClassAve_Click" Height="19"/>
+        <Button x:Name="btnAddStudent" Content="Add Student" HorizontalAlignment="Left" Margin="441,200,0,0" VerticalAlignment="Top" Width="125" Click="btnAddStudent_Click" Height="19"/>
+        <Button x:Name="btnDeleteStudent" Content="Delete Student" HorizontalAlignment="Left" Margin="441,230,0,0" VerticalAlignment="Top" Width="125" Click="btnDeleteStudent_Click" Height="19"/>
+        <Label x:Name="lblDate" Content="(Date)" HorizontalAlignment="Left" Margin="441,27,0,0" VerticalAlignment="Top" Height="26" Width="125"/>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Width="Auto">
+                <MenuItem Header="_File" Width="Auto">
+                    <MenuItem Header="_Open"></MenuItem>
+                    <MenuItem Header="_Close"/>
+                    <MenuItem Header="_Save"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
     </Grid>
 </Window>
